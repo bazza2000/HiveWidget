@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.impact.android.hivewidget"
+    android:versionCode="4"
+    android:versionName="0.3" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hive_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="org.impact.android.hivewidget.HiveWidgetProvider"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/hive_icon"
+            android:label="Hive Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_SETTING" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service android:name=".HiveWidgetService" >
+        </service>
+
+        <activity android:name="org.impact.android.hivewidget.prefs.HiveWidgetConfigure" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

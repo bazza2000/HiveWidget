@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_layout"
+    android:minHeight="40dp"
+    android:minWidth="180dp"
+    android:configure="org.impact.android.hivewidget.prefs.HiveWidgetConfigure"
+    android:updatePeriodMillis="300000" >
+
+    
+    <!-- android:previewImage="@drawable/hive_icon" SDK 11 and above -->
+
+</appwidget-provider>

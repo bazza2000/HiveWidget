@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="8dip"
+    android:background="@drawable/hive_shape" >
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_email" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_below="@+id/tv_email"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_below="@+id/et_email"
+        android:text="@string/tv_password" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_below="@+id/tv_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/b_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_below="@+id/et_password"
+        android:text="@string/b_save" />
+
+    <TextView
+        android:id="@+id/tv_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_email"
+        android:layout_below="@+id/b_save"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:text="@string/footer" />
+
+</RelativeLayout>

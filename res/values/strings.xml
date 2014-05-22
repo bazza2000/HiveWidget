@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">HiveWidget</string>
+    <string name="tv_email">Email:</string>
+    <string name="tv_password">Password:</string>
+    <string name="b_save">Save</string>
+    <string name="tv_update_time">Last Update @ ??????</string>
+    <string name="tv_status">Status</string>
+    <string name="iv_weather">Hive Icon</string>
+<string name="footer">Want to know more about the Hive system, or have queries not answered by the standard FAQs? \n\nIf you have question or improvements please come and visit us at: \n\nhttp://britishgashive.freeforums.org</string>
+</resources>
